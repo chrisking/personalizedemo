@@ -33,7 +33,7 @@ Next click the `Create policy` button at the top. In the new page, click the `JS
 
 Erase all of the content that is in the editor and paste the content in [IAM_Policy.json](IAM_Policy.json).
 
-After pasting, click the `Review policy` button. Give the policy again a personalize name like `FirstNameLastNamePersonalizeIAMPolicy`.
+After pasting, click the `Review policy` button. Give the policy again a custom name like `FirstNameLastNamePersonalizeIAMPolicy`.
 
 For the description, enter in something about it being used to demo Personalize. Finally click `Create policy`. Close this tab or window.
 
