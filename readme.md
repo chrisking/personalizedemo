@@ -62,7 +62,7 @@ Enter the following commands to clone this repository onto this instance:
 
 ```
 cd SageMaker
-https://github.com/chrisking/personalizedemo.git
+git clone https://github.com/chrisking/personalizedemo.git
 ```
 
 After that close your Terminal tab and go back to the main Notebook interface.
