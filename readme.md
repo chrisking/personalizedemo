@@ -29,6 +29,8 @@ Note that the role itself has become a link. Open that link in a new tab.
 
 Here you will update the policies of your instance to allow it to work with Personalize. Click the `Attach policies` button.
 
+Next, search for `AmazonS3FullAccess` and then check it, and then search for `AmazonPersonalizeFullAccess` and check it as well, before closing click `Attach Policy`. To proceed, click `Attach Policies` one more time. 
+
 Next click the `Create policy` button at the top. In the new page, click the `JSON` tab.
 
 Erase all of the content that is in the editor and paste the content in [IAM_Policy.json](IAM_Policy.json).
