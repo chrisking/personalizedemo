@@ -39,9 +39,10 @@ After pasting, click the `Review policy` button. Give the policy again a custom 
 
 For the description, enter in something about it being used to demo Personalize. Finally click `Create policy`. Close this tab or window.
 
+Once that has completed, click the `Roles` link on the left, then search for `Sagemaker` click it.
+
 Once closed you should see the tab for adding permissions to your SageMaker role. Click the `Filter Policies` link, then select
-`Customer managed`. After that, you should see the policy you just created, if the list is long, just paste the name in the search bar to reduce the number
-of items. If you do not see it still, click the refresh icon in the top right of the page.
+`Customer managed`. After that, you should see the policy you just created, if the list is long, just paste the name in the search bar to reduce the number of items. If you do not see it still, click the refresh icon in the top right of the page. To attach the policy you created click `Attach policies` again 
 
 After clicking the checkbox next to the policy, click `Attach policy` at the bottom of the page. Then close this window.
 
