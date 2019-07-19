@@ -7,6 +7,7 @@
             "Action": [
                 "forecast:*",
                 "s3:*",
+                "iam:AttachRolePolicy",
                 "iam:GetRole",
                 "iam:GetUser",
                 "iam:ListRoles",
