@@ -5,7 +5,7 @@
             "Sid": "VisualEditor0",
             "Effect": "Allow",
             "Action": [
-                "forecast:*",
+                "personalize:*",
                 "s3:*",
                 "iam:AttachRolePolicy",
                 "iam:GetRole",

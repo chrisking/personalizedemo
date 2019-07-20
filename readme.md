@@ -24,12 +24,10 @@ Click the orange `Create notebook instance` button.
 Give the instance a name unique in the account you are using. If a shared account, place your name first like `FirstNameLastNamePersonalizeDemo`. The default Instance
 type is fine. 
 
-The Next component to change is the IAM role. Under the drop-down click `Create a new role`. Then for S3, select `Any S3 Bucket`, finally click `Create role`.
-Note that the role itself has become a link. Open that link in a new tab.
+The Next component to change is the IAM role. Under the drop-down click `Create a new role`. Then for S3, select `Any S3 Bucket`, finally click `Create role`. 
+Note that the role itself has become a link, copy and paste this link to a blank text file first. Open that link in a new tab. 
 
 Here you will update the policies of your instance to allow it to work with Personalize. Click the `Attach policies` button.
-
-Next, search for `AmazonS3FullAccess` and then check it, and then search for `AmazonPersonalizeFullAccess` and check it as well, before closing click `Attach Policy`. To proceed, click `Attach Policies` one more time. 
 
 Next click the `Create policy` button at the top. In the new page, click the `JSON` tab.
 
@@ -39,7 +37,7 @@ After pasting, click the `Review policy` button. Give the policy again a custom 
 
 For the description, enter in something about it being used to demo Personalize. Finally click `Create policy`. Close this tab or window.
 
-Once that has completed, click the `Roles` link on the left, then search for `Sagemaker` click it.
+Once that has completed, click the `Roles` link on the left, then search for what you pasted in a text file earlier(just the end bits like `AmazonSageMaker-ExecutionRole-20190720T152376`), then click it.
 
 Once closed you should see the tab for adding permissions to your SageMaker role. Click the `Filter Policies` link, then select
 `Customer managed`. After that, you should see the policy you just created, if the list is long, just paste the name in the search bar to reduce the number of items. If you do not see it still, click the refresh icon in the top right of the page. To attach the policy you created click `Attach policies` again 
