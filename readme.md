@@ -51,6 +51,7 @@ next session.
 
 1. `Personalize_BuildCampaign.ipynb`  - Guides you through building your first campaign and recommendation algorithm. 
 2. `View_Campaign_And_Interactions.ipynb` - Showcase how to generate a recommendation and how to modify it with real time intent. 
+3. `Cleanup.ipynb` - Deletes anything that was created so you are not charged for additional resources.
 
 
 ## Getting Started with Amazon Personalize.
