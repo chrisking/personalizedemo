@@ -39,6 +39,8 @@ For the description, enter in something about it being used to demo Personalize.
 
 Once that has completed, click the `Roles` link on the left, then search for what you pasted in a text file earlier(just the end bits like `AmazonSageMaker-ExecutionRole-20190720T152376`), then click it.
 
+Click Attach Policy button
+
 Once closed you should see the tab for adding permissions to your SageMaker role. Click the `Filter Policies` link, then select
 `Customer managed`. After that, you should see the policy you just created, if the list is long, just paste the name in the search bar to reduce the number of items. If you do not see it still, click the refresh icon in the top right of the page. To attach the policy you created click `Attach policies` again 
 
