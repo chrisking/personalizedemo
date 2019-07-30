@@ -30,27 +30,27 @@ b. In the S3 console, click "Create Bucket"
 
 c. In the "NameRegion" screen
 
-Enter unique name for the bucket (For eg., personalize-demo-first-name)
+  Enter unique name for the bucket (For eg., personalize-demo-first-name)
 
-Select the region.
+  Select the region.
 
-![Alt text](./screenshots/S3Create/S3Create-NameRegion.png)
+![Alt text](./screenshots/S3Create/S3CreateBucket-NameRegion.png)
 
 d. In the "Configure Options" screen leave defaults and click 'Next'
 
-![Alt text](./screenshots/S3Create/S3Create-ConfigureOptions.png)
+![Alt text](./screenshots/S3Create/S3CreateBucket-ConfigureOptions.png)
 
 e. In the "Set Permissions" screen leave defaults and click 'Next'
 
-![Alt text](./screenshots/S3Create/S3Create-Review.png)
+![Alt text](./screenshots/S3Create/S3CreateBucket-Review.png)
 
 f. In the "Review" screen click 'Next'
 
-![Alt text](./screenshots/S3Create/S3Create-SetPermissions.png)
+![Alt text](./screenshots/S3Create/S3CreateBucket-SetPermissions.png)
 
 g. Verify that the S3 bucket is created.
 
-![Alt text](./screenshots/S3Create/S3Create-Complete.png)
+![Alt text](./screenshots/S3Create/S3CreateBucket-Complete.png)
 
 ### Step 2 : Create IAM role and IAM policy
 
