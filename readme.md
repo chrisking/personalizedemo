@@ -20,8 +20,37 @@ In the next section the Amazon SageMaker Notebook will be used to explore the Am
 
 ### Step 1 : Create an S3 bucket
 
+a. Login to the AWS console and search for S3 service.
+
 ![Alt text](./screenshots/S3Create/S3ServiceSearch.png)
 
+b. In the S3 console, click "Create Bucket"
+
+![Alt text](./screenshots/S3Create/S3CreateBucket.png)
+
+c. In the "NameRegion" screen
+
+Enter unique name for the bucket (For eg., personalize-demo-first-name)
+
+Select the region.
+
+![Alt text](./screenshots/S3Create/S3Create-NameRegion.png)
+
+d. In the "Configure Options" screen leave defaults and click 'Next'
+
+![Alt text](./screenshots/S3Create/S3Create-ConfigureOptions.png)
+
+e. In the "Set Permissions" screen leave defaults and click 'Next'
+
+![Alt text](./screenshots/S3Create/S3Create-Review.png)
+
+f. In the "Review" screen click 'Next'
+
+![Alt text](./screenshots/S3Create/S3Create-SetPermissions.png)
+
+g. Verify that the S3 bucket is created.
+
+![Alt text](./screenshots/S3Create/S3Create-Complete.png)
 
 ### Step 2 : Create IAM role and IAM policy
 
