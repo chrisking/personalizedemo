@@ -1,12 +1,42 @@
-# Personalize Demo
+# Amazon Personalize Workshop
 
-This project is a self contained lab for building your first recommendation algorithm with Amazon Personalize. All that is required is admin rights in your own AWS account.
+In this workshop you will build your very own recommendation model that will recommend movies to users based on their past preferences. You will further improve the recommendation model to take into account user's interactions with movie items to provide accurate recommendations.
+
+
+## Prerequisites
+
+1. AWS Account
+2. User with administrator access to the AWS Account
+
+## Setup
+
+This section will walk through the following setup steps.
+
+1. Create an S3 bucket that will be used to save movie lens data.
+2. Create IAM role and IAM policy that provides Amazon SageMaker Notebook access to Amazon Personalize.
+3. Create an Amazon SageMaker Notebook Instance.
+
+In the next section the Amazon SageMaker Notebook will be used to explore the Amazon Personalize service.
+
+### Step 1 : Create an S3 bucket
+
+![Alt text](./screenshots/S3Create/S3ServiceSearch.png)
+
+
+### Step 2 : Create IAM role and IAM policy
+
+### Step 3 : Create an Amazon SageMaker Notebook Instance
+
+
+
+
 
 ## Getting Started with Amazon Personalize with Amazon SageMaker.
 
 This guide will walk through the creation of a new SageMaker Notebook Instance, the configuration of IAM policies, an S3 bucket
 and your first project with Amazon Personalize. The Notebook Instance can then be used again for additional exploratory work with 
 Amazon Personalize.
+
 
 ## Creating Your Notebook Instance
 
