@@ -15,9 +15,7 @@ High level steps :
 2. Create an IAM policy that provides access to Amazon Personalize APIs.
 3. Create an Amazon SageMaker Notebook to explore the movie lens data and use Amazon Personalize APIs to build the recommendation model.
 
-Follow the detailed step-by-step instructions provided in setup.docx
-
-[setup.docx](./setup.docx)
+Follow the detailed step-by-step instructions provided in [Setup.docx](./Setup.docx)
 
 ## Agenda
 
