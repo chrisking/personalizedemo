@@ -17,6 +17,8 @@ High level steps :
 
 Follow the detailed step-by-step instructions provided in setup.docx
 
+[setup.docx](./setup.docx)
+
 ## Agenda
 
 1. `Personalize_BuildCampaign.ipynb`  - Guides you through building your first campaign and recommendation algorithm. 
