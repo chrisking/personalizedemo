@@ -52,6 +52,7 @@ Resources:
         - "arn:aws:iam::aws:policy/AmazonSageMakerFullAccess"
         - "arn:aws:iam::aws:policy/AmazonS3FullAccess"
         - "arn:aws:iam::aws:policy/service-role/AmazonPersonalizeFullAccess"
+        - "arn:aws:iam::aws:policy/IAMFullAccess"
 
   # SageMaker notebook
   NotebookInstance:
@@ -61,6 +62,7 @@ Resources:
       NotebookInstanceName: !Ref NotebookName
       RoleArn: !GetAtt SageMakerIamRole.Arn
       VolumeSizeInGB: !Ref VolumeSize
+      DefaultCodeRepository: https://github.com/chrisking/personalizedemo.git
 
 Outputs:
   S3Bucket:
