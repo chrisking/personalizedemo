@@ -24,6 +24,22 @@ As mentioned above, the first step is to deploy a CloudFormation template that w
 
 The default options should suffice but you will need to change the S3 bucket name to reflect your name. Do not use special characters, uppercase characters, and it must be a unique value. If it fails to create a bucket simply try something more complex in your next attempt.
 
+#TODO include screenshots of navigating the CF start stack wizard.
+
+Once you stack has completed the deployment you are ready to begin the lab with all the resources you need. Visit the output tab to note the name of your S3 bucket. Place that in a textfile to refer back to in your first notebook.
+
+The rest of the exercises are completed using Jupyter Notebooks, this is a system for writing, executing, and sharing code. It allows you to follow our blueprint for building a simple model with Amazon Personalize. Later you can manipulate the notebooks to support your own custom data and to help build your own models.
+
+Each snippet of code is stored within a "cell" and you execute them one at a time. 
+
+#TODO show the run button
+#TODO show executing
+#TODO show completed
+
+
+Below are the notebooks in the order they should be worked through. Cleanup will delete all of the resources created by you within the lab and once you are done you can click delete stack on the CloudFormation page to delete your S3 bucket, IAM policies, and Jupyter Notebook instance.
+
+You can refer back to this CloudFormation template at any time to bootstrap a working environment for data manipulation and to use Amazon Personalize.
 
 ## Agenda
 
@@ -33,6 +49,8 @@ The default options should suffice but you will need to change the S3 bucket nam
 
 
 ## Getting Started with Amazon Personalize.
+
+#TODO showcase how to go to your notebook.
 
 To begin, click `Open Jupyter`, this will take you to the default interface for the Notebook Instance.
 
