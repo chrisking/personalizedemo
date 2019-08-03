@@ -7,7 +7,7 @@ Parameters:
 
   BucketName:
     Type: String
-    Description: The name of the S3 Bucket to create
+    Description: The name of the S3 Bucket to create, use only characters and numbers, no special characters or spaces.
 
   NotebookName:
     Type: String
