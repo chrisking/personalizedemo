@@ -20,7 +20,7 @@ In this workshop you will build your very own recommendation model that will rec
 
 As mentioned above, the first step is to deploy a CloudFormation template that will perform much of the initial setup for you. In another browser window login to your AWS account. Once you have done that click the link below to start the process of deploying the items you need via CloudFormation.
 
-[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=PersonalizeDemo&templateURL=https://raw.githubusercontent.com/chrisking/personalizedemo/cloudformation/PersonalizeDemo.yaml)
+[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=PersonalizeDemo&templateURL=https://chriskingpartnershare.s3.amazonaws.com/PersonalizeDemo.yaml)
 
 The default options should suffice but you will need to change the S3 bucket name to reflect your name. Do not use special characters, uppercase characters, and it must be a unique value. If it fails to create a bucket simply try something more complex in your next attempt.
 
