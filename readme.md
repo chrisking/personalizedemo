@@ -7,15 +7,23 @@ In this workshop you will build your very own recommendation model that will rec
 1. AWS Account
 2. User with administrator access to the AWS Account
 
-## Setup
+## Process
 
-High level steps :
+1. First you will deploy a CloudFormation template that will do the following:
+ 1. Create an S3 bucket for all of your data storage.
+ 1. Create a SageMaker Notebook Instance for you to complete the workshop.
+ 1. Create the IAM policies needed for your notebook.
+ 1. Clone this repository into the notebook so you are ready to work.
+1. Open the notebook and follow the instructions below.
 
-1. Create an S3 bucket that will be used to save movie lens data.
-2. Create an IAM policy that provides access to Amazon Personalize APIs.
-3. Create an Amazon SageMaker Notebook to explore the movie lens data and use Amazon Personalize APIs to build the recommendation model.
+## Building Your Environment
 
-Follow the detailed step-by-step instructions provided in [Setup.docx](./Setup.docx)
+As mentioned above, the first step is to deploy a CloudFormation template that will perform much of the initial setup for you. In another browser window login to your AWS account. Once you have done that click the link below to start the process of deploying the items you need via CloudFormation.
+
+[![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=PersonalizeDemo&templateURL=https://raw.githubusercontent.com/chrisking/personalizedemo/cloudformation/PersonalizeDemo.yaml)
+
+The default options should suffice but you will need to change the S3 bucket name to reflect your name. Do not use special characters, uppercase characters, and it must be a unique value. If it fails to create a bucket simply try something more complex in your next attempt.
+
 
 ## Agenda
 
