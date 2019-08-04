@@ -1,6 +1,6 @@
 # Amazon Personalize Workshop
 
-In this workshop you will build your very own recommendation model that will recommend movies to users based on their past preferences. You will further improve the recommendation model to take into account user's interactions with movie items to provide accurate recommendations.  This workshop will use the publicly available movie lens dataset.
+In this workshop you will build your very own recommendation model that will recommend movies to users based on their past preferences. You will further improve the recommendation model to take into account a user's interactions with movie items to provide accurate recommendations.  This workshop will use the publicly available movie lens dataset.
 
 ## Prerequisites
 
@@ -18,60 +18,87 @@ In this workshop you will build your very own recommendation model that will rec
 
 ## Building Your Environment
 
-As mentioned above, the first step is to deploy a CloudFormation template that will perform much of the initial setup for you. In another browser window login to your AWS account. Once you have done that click the link below to start the process of deploying the items you need via CloudFormation.
+As mentioned above, the first step is to deploy a CloudFormation template that will perform much of the initial setup for you. In another browser window login to your AWS account. Once you have done that open the link below in a new tab to start the process of deploying the items you need via CloudFormation.
 
 [![Launch Stack](https://s3.amazonaws.com/cloudformation-examples/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=PersonalizeDemo&templateURL=https://chriskingpartnershare.s3.amazonaws.com/PersonalizeDemo.yaml)
 
-The default options should suffice but you will need to change the S3 bucket name to reflect your name. Do not use special characters, uppercase characters, and it must be a unique value. If it fails to create a bucket simply try something more complex in your next attempt.
+Follow along with the screenshots if you have any questions about these steps.
 
-#TODO include screenshots of navigating the CF start stack wizard.
+### Cloud Formation Wizard
 
-Once you stack has completed the deployment you are ready to begin the lab with all the resources you need. Visit the output tab to note the name of your S3 bucket. Place that in a textfile to refer back to in your first notebook.
+Start by clicking `Next` at the bottom like shown:
 
-The rest of the exercises are completed using Jupyter Notebooks, this is a system for writing, executing, and sharing code. It allows you to follow our blueprint for building a simple model with Amazon Personalize. Later you can manipulate the notebooks to support your own custom data and to help build your own models.
+![StackWizard](static/imgs/img1.png)
 
-Each snippet of code is stored within a "cell" and you execute them one at a time. 
+In the next page you need to provide a unique S3 bucket name for your file storage, it is recommended to simply add your first name and last name to the end of the default option as shown below, after that update click `Next` again.
 
-#TODO show the run button
-#TODO show executing
-#TODO show completed
+![StackWizard2](static/imgs/img3.png)
 
+This page is a bit longer so scroll to the bottom to click `Next`.
 
-Below are the notebooks in the order they should be worked through. Cleanup will delete all of the resources created by you within the lab and once you are done you can click delete stack on the CloudFormation page to delete your S3 bucket, IAM policies, and Jupyter Notebook instance.
+![StackWizard3](static/imgs/img4.png)
 
-You can refer back to this CloudFormation template at any time to bootstrap a working environment for data manipulation and to use Amazon Personalize.
+Again scroll to the bottom, check the box to enable the template to create new IAM resources and then click `Create Stack`.
+
+![StackWizard4](static/imgs/img5.png)
+
+For a few minutes CloudFormation will be creating the resources described above on your behalf it will look like this while it is provisioning:
+
+![StackWizard5](static/imgs/img6.png)
+
+Once it has completed you'll see green text like below indicating that the work has been completed:
+
+![StackWizard5](static/imgs/img7.png)
+
+Now that you have your environment created, you need to save the name of your S3 bucket for future use, you can find it by clicking on the `Outputs` tab and then looking for the resource `S3Bucket`, once you find it copy and paste it to a text file for the time being.
+
+![StackWizard5](static/imgs/img8.png)
+
 
 ## Agenda
+
+The steps below outline the process of building your own recommendation model, improving it, and then cleaning up all of your resources to prevent any unwanted charges. To get started executing these follow the steps in the next section.
 
 1. `Personalize_BuildCampaign.ipynb`  - Guides you through building your first campaign and recommendation algorithm. 
 2. `View_Campaign_And_Interactions.ipynb` - Showcase how to generate a recommendation and how to modify it with real time intent. 
 3. `Cleanup.ipynb` - Deletes anything that was created so you are not charged for additional resources.
 
 
-## Getting Started with Amazon Personalize.
+## Using the Notebooks
 
-#TODO showcase how to go to your notebook.
+Start by navigating to the SageMaker serivce page by clicking the `Services` link in the top navigation bar of the AWS console.
 
-To begin, click `Open Jupyter`, this will take you to the default interface for the Notebook Instance.
+![StackWizard5](static/imgs/img9.png)
 
-Click `New` then click `Terminal`, this will open a BASH shell for you on this instance. 
+In the search field enter `SageMaker` and then click for the service when it appears, from the service page click the `Notebook Instances` link on the far left menu bar.
 
-Enter the following commands to clone this repository onto this instance:
+![StackWizard5](static/imgs/img10.png)
 
-```
-cd SageMaker
-git clone https://github.com/sirimuppala/personalizedemo.git
-```
+To get to the Jupyter interface, simply click `Open JupyterLab` on the far right next to your notebook instance.
 
-After that close your Terminal tab and go back to the main Notebook interface.
+![StackWizard5](static/imgs/img11.png)
 
-A new folder titled `personalizedemo` should be visible, click it, click notebooks, then click `Personalize_BuildCampaign.ipynb` this will open the notebook.
+Clicking the open link will take a few seconds to redirect you to the Jupyter system but once there you should see a collection of files on your left. Get started by clicking on `Personalize_BuildCampaign.ipynb`.
 
-If prompted for a kernel, select `conda_python3`.
+![StackWizard5](static/imgs/img12.png)
 
-From here you will follow the instructions outlined in the notebook. 
+The rest of the lab will take place via the Jupyter notebooks, simply read each block before executing it and moving onto the next. If you have any questions about how to use the notebooks please ask your instructor or if you are working independently this is a pretty good video to get started:
 
-**Read Every Cell FULLY Before Executing It**
+https://www.youtube.com/watch?v=Gzun8PpyBCo
 
-The rest of the lab will take place via the Jupyter notebooks. 
+## After the Notebooks
+
+Once you have completed all of the work in the Notebooks and have completed the cleanup steps there as well, the last thing to do is to delete the stack you created with CloudFormation. To do that, inside the AWS Console again click the `Services` link at the top, and this time enter in `CloudFormation` and click the link for it.
+
+![StackWizard5](static/imgs/img9.png)
+
+Click the `Delete` button on the demo stack you created:
+
+![StackWizard5](static/imgs/img13.png)
+
+Lastly click the `Delete Stack` button that shows up on the popup:
+
+![StackWizard5](static/imgs/img14.png)
+
+You'll now notice that the stack is in progress of being deleted. Once you see `Delete Completed` you know that everything has been deleted and you are 100% done with this lab.
 
